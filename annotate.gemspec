@@ -26,14 +26,14 @@ Gem::Specification.new do |s|
     s.specification_version = 4
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rake>, ["~> 10.4"])
-      s.add_runtime_dependency(%q<activerecord>, [">= 3.2", "<= 4.3"])
+      s.add_runtime_dependency(%q<rake>, [">= 10.4", "< 12.0"])
+      s.add_runtime_dependency(%q<activerecord>, [">= 3.2", "< 6.0"])
     else
-      s.add_dependency(%q<rake>, ["~> 10.4"])
-      s.add_dependency(%q<activerecord>, [">= 3.2", "<= 4.3"])
+      s.add_dependency(%q<rake>, [">= 10.4", "< 12.0"])
+      s.add_dependency(%q<activerecord>, [">= 3.2", "< 6.0"])
     end
   else
     s.add_dependency(%q<rake>, [">= 0.8.7"])
-    s.add_dependency(%q<activerecord>, [">= 3.2", "<= 4.3"])
+    s.add_dependency(%q<activerecord>, [">= 3.2", "< 6.0"])
   end
 end
